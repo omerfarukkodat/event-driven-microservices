@@ -1,0 +1,4 @@
+com/kodat/of/WikimediaChangesHandler.class
+com/kodat/of/config/KafkaTopicConfig.class
+com/kodat/of/WikimediaChangesProducer.class
+com/kodat/of/SpringBootProducerApplication.class
