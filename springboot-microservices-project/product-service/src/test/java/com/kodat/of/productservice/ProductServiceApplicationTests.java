@@ -2,6 +2,9 @@ package com.kodat.of.productservice;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.kodat.of.productservice.dto.ProductRequest;
+import com.kodat.of.productservice.repository.ProductRepository;
+import org.junit.Assert;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -32,6 +35,9 @@ class ProductServiceApplicationTests {
     @Autowired
     private ObjectMapper objectMapper;
 
+    @Autowired
+    private ProductRepository productRepository;
+
 
 @DynamicPropertySource
     static void setProperties(DynamicPropertyRegistry dynamicPropertyRegistry){
@@ -46,6 +52,7 @@ class ProductServiceApplicationTests {
             .contentType(MediaType.APPLICATION_JSON)
             .content(productRequestString))
             .andExpect(status().isCreated());
+        Assertions.assertEquals(1, productRepository.findAll().size());
 
 
 

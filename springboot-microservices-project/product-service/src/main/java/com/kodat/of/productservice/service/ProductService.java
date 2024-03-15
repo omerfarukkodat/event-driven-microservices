@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
 public class ProductService {
     private final ProductRepository productRepository;
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(ProductService.class);
+   // private static final Logger LOGGER = LoggerFactory.getLogger(ProductService.class);
 
     public ProductService(ProductRepository productRepository) {
         this.productRepository = productRepository;
@@ -31,8 +31,10 @@ public class ProductService {
                 .description(productRequest.getDescription())
                 .price(productRequest.getPrice())
                 .build();
-        LOGGER.info(String.format("Product {} created." , product.getId()));
+      //  LOGGER.info(String.format("Product %s is saved." , product.getId()));
+
         productRepository.save(product);
+        log.info("Product {} is saved" , product.getId());
 
     }
 
