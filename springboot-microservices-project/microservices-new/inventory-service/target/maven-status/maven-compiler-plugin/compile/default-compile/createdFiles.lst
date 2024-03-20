@@ -1,0 +1,5 @@
+com/kodat/of/inventoryservice/controller/InventoryController.class
+com/kodat/of/inventoryservice/repository/InventoryRepository.class
+com/kodat/of/inventoryservice/InventoryServiceApplication.class
+com/kodat/of/inventoryservice/service/InventoryService.class
+com/kodat/of/inventoryservice/model/Inventory.class

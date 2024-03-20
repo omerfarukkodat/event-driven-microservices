@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.kodat.of.inventoryservice.InventoryServiceApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.147 s -- in com.kodat.of.inventoryservice.InventoryServiceApplicationTests

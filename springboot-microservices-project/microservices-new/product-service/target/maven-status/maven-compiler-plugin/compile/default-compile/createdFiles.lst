@@ -1,0 +1,10 @@
+com/kodat/of/productservice/repository/ProductRepository.class
+com/kodat/of/productservice/service/ProductService.class
+com/kodat/of/productservice/model/Product.class
+com/kodat/of/productservice/dto/ProductResponse.class
+com/kodat/of/productservice/dto/ProductResponse$ProductResponseBuilder.class
+com/kodat/of/productservice/model/Product$ProductBuilder.class
+com/kodat/of/productservice/controller/ProductController.class
+com/kodat/of/productservice/dto/ProductRequest.class
+com/kodat/of/productservice/dto/ProductRequest$ProductRequestBuilder.class
+com/kodat/of/productservice/ProductServiceApplication.class

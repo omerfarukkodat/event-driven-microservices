@@ -1,0 +1,8 @@
+com/kodat/of/orderservice/dto/OrderRequest.class
+com/kodat/of/orderservice/service/OrderService.class
+com/kodat/of/orderservice/controller/OrderController.class
+com/kodat/of/orderservice/repository/OrderRepository.class
+com/kodat/of/orderservice/model/OrderLineItems.class
+com/kodat/of/orderservice/OrderServiceApplication.class
+com/kodat/of/orderservice/model/Order.class
+com/kodat/of/orderservice/dto/OrderLineItemsDto.class

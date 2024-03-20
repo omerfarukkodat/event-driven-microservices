@@ -1,0 +1,5 @@
+/Users/farukkodat/Downloads/spring-boot-projects-2/springboot-microservices-project/microservices-new/inventory-service/src/main/java/com/kodat/of/inventoryservice/InventoryServiceApplication.java
+/Users/farukkodat/Downloads/spring-boot-projects-2/springboot-microservices-project/microservices-new/inventory-service/src/main/java/com/kodat/of/inventoryservice/controller/InventoryController.java
+/Users/farukkodat/Downloads/spring-boot-projects-2/springboot-microservices-project/microservices-new/inventory-service/src/main/java/com/kodat/of/inventoryservice/model/Inventory.java
+/Users/farukkodat/Downloads/spring-boot-projects-2/springboot-microservices-project/microservices-new/inventory-service/src/main/java/com/kodat/of/inventoryservice/repository/InventoryRepository.java
+/Users/farukkodat/Downloads/spring-boot-projects-2/springboot-microservices-project/microservices-new/inventory-service/src/main/java/com/kodat/of/inventoryservice/service/InventoryService.java

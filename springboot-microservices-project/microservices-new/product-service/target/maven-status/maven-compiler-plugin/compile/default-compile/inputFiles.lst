@@ -1,0 +1,7 @@
+/Users/farukkodat/Downloads/spring-boot-projects-2/springboot-microservices-project/microservices-new/product-service/src/main/java/com/kodat/of/productservice/service/ProductService.java
+/Users/farukkodat/Downloads/spring-boot-projects-2/springboot-microservices-project/microservices-new/product-service/src/main/java/com/kodat/of/productservice/ProductServiceApplication.java
+/Users/farukkodat/Downloads/spring-boot-projects-2/springboot-microservices-project/microservices-new/product-service/src/main/java/com/kodat/of/productservice/controller/ProductController.java
+/Users/farukkodat/Downloads/spring-boot-projects-2/springboot-microservices-project/microservices-new/product-service/src/main/java/com/kodat/of/productservice/model/Product.java
+/Users/farukkodat/Downloads/spring-boot-projects-2/springboot-microservices-project/microservices-new/product-service/src/main/java/com/kodat/of/productservice/dto/ProductRequest.java
+/Users/farukkodat/Downloads/spring-boot-projects-2/springboot-microservices-project/microservices-new/product-service/src/main/java/com/kodat/of/productservice/repository/ProductRepository.java
+/Users/farukkodat/Downloads/spring-boot-projects-2/springboot-microservices-project/microservices-new/product-service/src/main/java/com/kodat/of/productservice/dto/ProductResponse.java
