@@ -3,9 +3,11 @@ package com.kodat.of.orderservice.service;
 import com.kodat.of.orderservice.dto.InventoryResponse;
 import com.kodat.of.orderservice.dto.OrderLineItemsDto;
 import com.kodat.of.orderservice.dto.OrderRequest;
+import com.kodat.of.orderservice.event.OrderPlacedEvent;
 import com.kodat.of.orderservice.model.Order;
 import com.kodat.of.orderservice.model.OrderLineItems;
 import com.kodat.of.orderservice.repository.OrderRepository;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -21,10 +23,13 @@ public class OrderService {
 
     private final OrderRepository orderRepository;
     private final WebClient.Builder webClientBuilder;
+    private final KafkaTemplate<String,OrderPlacedEvent> kafkaTemplate;
 
-    public OrderService(OrderRepository orderRepository, WebClient.Builder webClientBuilder) {
+    public OrderService(OrderRepository orderRepository, WebClient.Builder webClientBuilder, KafkaTemplate<String, OrderPlacedEvent> kafkaTemplate) {
         this.orderRepository = orderRepository;
         this.webClientBuilder = webClientBuilder;
+
+        this.kafkaTemplate = kafkaTemplate;
     }
 
 
@@ -51,6 +56,7 @@ public class OrderService {
      boolean allProductsInStock =Arrays.stream(inventoryResponses).allMatch(InventoryResponse::isInStock);
         if (allProductsInStock) {
             orderRepository.save(order);
+            kafkaTemplate.send("notificationTopic" ,new OrderPlacedEvent(order.getOrderNumber()));
             return "Order placed successfully";
 
         } else {
