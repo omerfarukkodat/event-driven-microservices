@@ -10,9 +10,9 @@
 
 
 ## Requirements :
-Java 17 or higher
-Maven
-PostgreSQL database server
+- Java 17 or higher
+- Maven
+- PostgreSQL database server
 ## Getting Started:
 git clone https://github.com/omerfarukkodat/banking-app.git
 
